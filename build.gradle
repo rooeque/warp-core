@@ -291,8 +291,8 @@ publishing {
 
 signing {
     // only require signing for non-snapshot versions being published to maven central
-    required {
-        !isSnapshot(version.toString()) && gradle.taskGraph.hasTask("publish")
-    }
+    //required {
+    //    !isSnapshot(version.toString()) && gradle.taskGraph.hasTask("publish")
+    //}
     sign publishing.publications.mavenJava
 }

@@ -262,9 +262,11 @@ publishing {
             groupId = 'com.workday.warp'
             artifactId = 'warp-core'
             from components.java
-            artifact sourcesJar
-            artifact javadocJar
-            artifact scaladocJar
+            afterEvaluate {
+                artifact sourcesJar
+                artifact javadocJar
+                artifact scaladocJar
+            }
             pom {
                 name = 'warp-core'
                 description = 'A library for scientific performance testing.'

@@ -71,7 +71,6 @@ allprojects {
         }
 
         api "org.scala-lang.modules:scala-collection-compat_%%:${versions.scalaCollectionCompat}"
-
     }
 
     scalastyle {
@@ -147,16 +146,27 @@ subprojects {
 
     sourceSets {
 
+        generated {
+            scala {
+                srcDir 'src/generated/scala'
+            }
+            java {
+                srcDirs = []
+            }
+        }
+
         main {
             // joint compilation
             scala {
+                compileClasspath += generated.output
                 srcDir 'src/main/java'
                 srcDir 'src/main/scala'
                 // we want our generated code to live in a separate directory so we can easily skip scalastyle and scalafix,
                 // however its convenient to treat this as part of the same source set and compile everything together
-                srcDir 'src/generated/scala'
+                // srcDir 'src/generated/scala'
             }
             java {
+                compileClasspath += generated.output
                 srcDirs = [] // don't compile Java code twice
             }
 
@@ -173,6 +183,11 @@ subprojects {
             }
         }
 
+    }
+
+    dependencies {
+        generatedImplementation "org.scala-lang:scala-library:%scala-version%"
+        generatedImplementation "com.typesafe.slick:slick_%%:${versions.slick}"
     }
 
 

@@ -188,8 +188,6 @@ subprojects {
     dependencies {
         generatedImplementation "org.scala-lang:scala-library:%scala-version%"
         generatedImplementation "com.typesafe.slick:slick_%%:${versions.slick}"
-        generatedImplementation "com.typesafe.slick:slick-hikaricp_%%:${versions.slick}"
-        generatedImplementation "org.flywaydb:flyway-core:${versions.flyway}"
     }
 
 

@@ -179,8 +179,7 @@ implicit object ${wrapperName}TypeClassObject extends $parentTypeClassName[$wrap
           s"""
 package ${pkg}
 // !!! AUTO-GENERATED Slick data model, do not modify.
-// scalastyle:off
-import com.workday.warp.persistence.TablesLike._
+import com.workday.warp.persistence.models.TablesLike._
 
 /** Slick data model trait for extension, choice of backend or usage in the cake pattern. (Make sure to initialize this late.) */
 trait ${container}${parentType.map(t => s" extends $t").getOrElse("")} {
@@ -188,7 +187,6 @@ trait ${container}${parentType.map(t => s" extends $t").getOrElse("")} {
   import profile.api._
   ${indent(code)}
 }
-// scalastyle: on
 """.trim()
         }
       }
@@ -303,14 +301,14 @@ ${indent(tables.map(generateTypeClass).mkString("\n"))}
           s"""
 package ${pkg}
 // !!! AUTO-GENERATED Slick data model, do not modify.
-// scalastyle:off
 import slick.lifted.Rep
 import annotation.implicitNotFound
 
 trait ${container}${parentType.map(t => s" extends $t").getOrElse("")} {
   ${indent(code)}
 }
-// scalastyle:on
+
+object ${container} extends ${container}
           """.trim()
         }
       }

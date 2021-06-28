@@ -373,4 +373,6 @@ trait TablesLike {
     }
   }
 }
+
+object TablesLike extends TablesLike
 // scalastyle:on

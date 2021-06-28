@@ -1,7 +1,7 @@
 package com.workday.warp.persistence.model
 // !!! AUTO-GENERATED Slick data model, do not modify.
 // scalastyle:off
-import com.workday.warp.persistence.TablesLike._
+import com.workday.warp.persistence.model.TablesLike._
 
 /** Slick data model trait for extension, choice of backend or usage in the cake pattern. (Make sure to initialize this late.) */
 trait Tables {

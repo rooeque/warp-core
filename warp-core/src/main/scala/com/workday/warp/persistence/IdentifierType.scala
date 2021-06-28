@@ -3,7 +3,7 @@ package com.workday.warp.persistence
 import scala.annotation.implicitNotFound
 
 /**
-  * A type class containing values used to identify a [[com.workday.warp.persistence.TablesLike.TestExecutionLike]].
+  * A type class containing values used to identify a [[com.workday.warp.persistence.model.TablesLike.TestExecutionLike]].
   */
 @implicitNotFound("Could not find an implicit value for evidence of type class IdentifierType[${T}]." +
   " You might pass an (implicit ev: IdentifierType[${T}]) parameter to your method or import ${T}Type._")

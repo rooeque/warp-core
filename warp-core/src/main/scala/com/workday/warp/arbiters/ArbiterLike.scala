@@ -2,7 +2,7 @@ package com.workday.warp.arbiters
 
 import com.workday.warp.TestId
 import com.workday.warp.persistence.PersistenceAware
-import com.workday.warp.persistence.TablesLike._
+import com.workday.warp.persistence.model.TablesLike._
 
 /**
   * Represents a requirement imposed on a measured test.

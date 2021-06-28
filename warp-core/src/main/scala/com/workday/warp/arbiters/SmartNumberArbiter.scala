@@ -7,7 +7,7 @@ import com.workday.warp.config.CoreWarpProperty._
 import com.workday.warp.config.CoreConstants
 import com.workday.warp.utils.Implicits._
 import com.workday.warp.math.linalg.{CanSmoothTimeSeries, RobustPcaRunner}
-import com.workday.warp.persistence.TablesLike._
+import com.workday.warp.persistence.model.TablesLike._
 import com.workday.warp.persistence.Tables._
 import com.workday.warp.persistence.exception.WarpFieldPersistenceException
 import com.workday.warp.utils.TimeUtils

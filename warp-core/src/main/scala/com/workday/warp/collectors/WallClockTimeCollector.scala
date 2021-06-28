@@ -1,7 +1,7 @@
 package com.workday.warp.collectors
 
 import com.workday.warp.persistence.CorePersistenceAware
-import com.workday.warp.persistence.TablesLike._
+import com.workday.warp.persistence.model.TablesLike._
 import com.workday.warp.persistence.Tables._
 
 /**

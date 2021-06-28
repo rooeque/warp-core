@@ -5,7 +5,7 @@ import java.util.concurrent.TimeUnit
 
 import com.workday.warp.utils.Implicits._
 import com.workday.warp.persistence.CorePersistenceAware
-import com.workday.warp.persistence.TablesLike.TestExecutionRowLikeType
+import com.workday.warp.persistence.model.TablesLike.TestExecutionRowLikeType
 import com.workday.warp.persistence.Tables._
 import com.workday.warp.utils.TimeUtils
 

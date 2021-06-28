@@ -1,7 +1,7 @@
 package com.workday.warp.collectors
 
 import com.workday.warp.junit.{UnitTest, WarpJUnitSpec}
-import com.workday.warp.persistence.Tables.RowTypeClasses.TestExecutionRowTypeClassObject
+import com.workday.warp.persistence.model.TablesLike.RowTypeClasses._
 
 /**
   * Created by tomas.mccandless on 11/14/18.

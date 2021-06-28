@@ -1,7 +1,7 @@
 package com.workday.warp.collectors
 
 import com.workday.warp.config.CoreWarpProperty.WARP_LOG_MC_STACKTRACES
-import com.workday.warp.persistence.TablesLike.TestExecutionRowLikeType
+import com.workday.warp.persistence.model.TablesLike.TestExecutionRowLikeType
 import com.workday.warp.utils.{MeasurementUtils, WarpStopwatch}
 import org.apache.commons.io.FileUtils.byteCountToDisplaySize
 import org.pmw.tinylog.Logger

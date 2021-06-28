@@ -2,7 +2,7 @@ package com.workday.warp.arbiters
 
 import com.workday.warp.config.CoreWarpProperty._
 import com.workday.warp.math.linalg.{RobustPca, RobustPcaRunner}
-import com.workday.warp.persistence.TablesLike.TestExecutionRowLikeType
+import com.workday.warp.persistence.model.TablesLike.TestExecutionRowLikeType
 import com.workday.warp.persistence.Tables._
 import org.pmw.tinylog.Logger
 

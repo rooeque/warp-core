@@ -13,9 +13,10 @@ import com.workday.warp.persistence.Tables._
 import com.workday.warp.persistence.mysql.WarpMySQLProfile.api._
 import com.workday.warp.TestIdImplicits.string2TestId
 import WarpSlickDslSpec._
-import com.workday.warp.persistence.{Connection, CorePersistenceAware, CorePersistenceUtils, SkipIfH2, TablesLike}
+import com.workday.warp.persistence.{Connection, CorePersistenceAware, CorePersistenceUtils, SkipIfH2}
 import slick.lifted.Query
-import TablesLike.{TestDefinitionRowLike, TestExecutionRowLike}
+import com.workday.warp.persistence.model.TablesLike
+import com.workday.warp.persistence.model.TablesLike.{TestDefinitionRowLike, TestExecutionRowLike}
 import com.workday.warp.junit.{UnitTest, WarpJUnitSpec}
 import org.junit.jupiter.api.parallel.Isolated
 

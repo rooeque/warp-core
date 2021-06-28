@@ -4,7 +4,7 @@ import com.workday.warp.arbiters.{ArbiterLike, Ballot, RequirementViolationExcep
 import com.workday.warp.{HasRandomTestId, TestId, TrialResult}
 import com.workday.warp.collectors.AbstractMeasurementCollector
 import com.workday.warp.utils.Implicits._
-import com.workday.warp.persistence.TablesLike._
+import com.workday.warp.persistence.model.TablesLike._
 import com.workday.warp.persistence._
 import org.pmw.tinylog.Logger
 import com.workday.warp.dsl.using.measuring

@@ -7,8 +7,8 @@ import com.workday.warp.HasRandomTestId
 import com.workday.warp.heaphistogram.{HeapHistogram, HeapHistogramEntry}
 import com.workday.warp.junit.{IntegTest, WarpJUnitSpec}
 import com.workday.warp.persistence.{Connection, CorePersistenceAware}
-import com.workday.warp.persistence.TablesLike.TestExecutionRowLike
-import com.workday.warp.persistence.TablesLike.RowTypeClasses._
+import com.workday.warp.persistence.model.TablesLike.TestExecutionRowLike
+import com.workday.warp.persistence.model.TablesLike.RowTypeClasses._
 import com.workday.warp.TestIdImplicits.string2TestId
 import org.influxdb.InfluxDB
 import org.influxdb.dto.Pong

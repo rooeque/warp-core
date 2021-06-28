@@ -2,7 +2,7 @@ package com.workday.warp
 
 import java.time.Duration
 
-import com.workday.warp.persistence.TablesLike.TestExecutionRowLike
+import com.workday.warp.persistence.model.TablesLike.TestExecutionRowLike
 
 /**
   * Holds results of a warp test.

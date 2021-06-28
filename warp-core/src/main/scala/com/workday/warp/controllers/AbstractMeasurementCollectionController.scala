@@ -6,8 +6,8 @@ import com.workday.warp.TestIdImplicits._
 import com.workday.warp.arbiters.{ArbiterLike, Ballot}
 import com.workday.warp.collectors.AbstractMeasurementCollector
 import com.workday.warp.persistence.Tables.{TestDefinitionMetaTag => _, TestExecutionMetaTag => _, _}
-import com.workday.warp.persistence.TablesLike.RowTypeClasses._
-import com.workday.warp.persistence.TablesLike._
+import com.workday.warp.persistence.model.TablesLike.RowTypeClasses._
+import com.workday.warp.persistence.model.TablesLike._
 import com.workday.warp.persistence.{Tag, _}
 import com.workday.warp.persistence.exception.WarpFieldPersistenceException
 import com.workday.warp.utils.Implicits._

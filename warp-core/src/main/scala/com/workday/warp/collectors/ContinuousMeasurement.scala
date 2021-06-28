@@ -2,7 +2,7 @@ package com.workday.warp.collectors
 
 import java.util.concurrent.atomic.AtomicBoolean
 
-import com.workday.warp.persistence.TablesLike._
+import com.workday.warp.persistence.model.TablesLike._
 import com.workday.warp.config.CoreWarpProperty.WARP_CONTINUOUS_MEASUREMENT_INTERVAL
 
 import scala.annotation.tailrec

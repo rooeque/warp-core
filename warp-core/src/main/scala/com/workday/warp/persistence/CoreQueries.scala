@@ -4,7 +4,7 @@ import java.sql.Timestamp
 import java.time.LocalDate
 import com.workday.warp.persistence.Tables._
 import com.workday.warp.persistence.Tables.profile.api._
-import com.workday.warp.persistence.TablesLike._
+import com.workday.warp.persistence.model.TablesLike._
 
 import scala.concurrent.ExecutionContext.Implicits.global
 import com.workday.warp.persistence.IdentifierSyntax._

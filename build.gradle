@@ -76,6 +76,11 @@ allprojects {
     scalastyle {
         scalaVersion = '2.13'
         config = file("${rootDir}/scalastyle.xml")
+        sourceSets {
+            generated {
+                skip = true
+            }
+        }
     }
 
 
@@ -175,6 +180,8 @@ subprojects {
         test {
             // joint compilation
             scala {
+                compileClasspath += generated.output
+                runtimeClasspath += generated.output
                 srcDir 'src/test/java'
                 srcDir 'src/test/scala'
             }

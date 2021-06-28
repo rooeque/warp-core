@@ -4,7 +4,7 @@ import java.time.LocalDate
 
 import slick.dbio.DBIO
 import slick.lifted.{Query, Rep}
-import TablesLike._
+import model.TablesLike._
 
 /**
   * Defines functions for creating read and write [[Query]]. These queries can be composed, converted to [[DBIO]],

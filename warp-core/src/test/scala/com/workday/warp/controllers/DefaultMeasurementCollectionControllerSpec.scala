@@ -8,8 +8,9 @@ import com.workday.warp.arbiters.SmartNumberArbiter
 import com.workday.warp.collectors.{AbstractMeasurementCollector, ResponseTimeCollector}
 import com.workday.warp.junit.{UnitTest, WarpJUnitSpec}
 import com.workday.warp.persistence.Tables._
-import com.workday.warp.persistence.TablesLike.RowTypeClasses._
-import com.workday.warp.persistence.{TablesLike, Tag, _}
+import com.workday.warp.persistence.model.TablesLike.RowTypeClasses._
+import com.workday.warp.persistence.{Tag, _}
+import com.workday.warp.persistence.model.TablesLike
 import com.workday.warp.utils.Implicits._
 import org.junit.jupiter.api.parallel.Isolated
 import org.junit.jupiter.api.{BeforeEach, TestInfo}

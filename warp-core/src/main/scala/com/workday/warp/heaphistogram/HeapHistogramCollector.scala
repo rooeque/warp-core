@@ -2,7 +2,8 @@ package com.workday.warp.heaphistogram
 
 import com.workday.warp.TestId
 import com.workday.warp.collectors.AbstractMeasurementCollector
-import com.workday.warp.persistence.{PersistenceAware, TablesLike}
+import com.workday.warp.persistence.PersistenceAware
+import com.workday.warp.persistence.model.TablesLike
 
 /**
   * Collects and stores the Heap Histogram before and after measurement

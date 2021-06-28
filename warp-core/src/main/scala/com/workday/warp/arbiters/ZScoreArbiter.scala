@@ -1,7 +1,7 @@
 package com.workday.warp.arbiters
 
 import com.workday.warp.config.CoreWarpProperty._
-import com.workday.warp.persistence.TablesLike.TestExecutionRowLikeType
+import com.workday.warp.persistence.model.TablesLike.TestExecutionRowLikeType
 import com.workday.warp.persistence.Tables._
 import com.workday.warp.math.truncatePercent
 import com.workday.warp.utils.AnnotationReader

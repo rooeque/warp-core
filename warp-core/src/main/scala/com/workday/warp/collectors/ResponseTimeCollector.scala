@@ -5,8 +5,8 @@ import java.time.Duration
 import com.workday.warp.config.CoreWarpProperty._
 import com.workday.warp.TrialResult
 import com.workday.warp.utils.Implicits._
-import com.workday.warp.persistence.TablesLike._
-import com.workday.warp.persistence.TablesLike.RowTypeClasses._
+import com.workday.warp.persistence.model.TablesLike._
+import com.workday.warp.persistence.model.TablesLike.RowTypeClasses._
 import com.workday.warp.persistence.Tables._
 import com.workday.warp.persistence.CorePersistenceAware
 import com.workday.warp.persistence.influxdb.InfluxDBClient

@@ -10,8 +10,8 @@ import com.workday.warp.config.CoreConstants
 import com.workday.warp.TestIdImplicits.string2TestId
 import com.workday.warp.junit.{UnitTest, WarpJUnitSpec}
 import com.workday.warp.persistence.CorePersistenceAware
-import com.workday.warp.persistence.TablesLike._
-import com.workday.warp.persistence.TablesLike.RowTypeClasses._
+import com.workday.warp.persistence.model.TablesLike._
+import com.workday.warp.persistence.model.TablesLike.RowTypeClasses._
 import org.junit.jupiter.api.parallel.Isolated
 import org.pmw.tinylog.Logger
 

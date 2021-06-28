@@ -5,10 +5,10 @@ import java.time.Instant
 import com.workday.warp.TestId
 import com.workday.warp.config.CoreWarpProperty._
 import com.workday.warp.config.WarpPropertyManager
+import com.workday.warp.persistence.model.TablesLike._
 import com.workday.warp.persistence.Tables._
 import com.workday.warp.persistence.Tables.RowTypeClasses._
 import com.workday.warp.persistence.Tables.profile.api._
-import com.workday.warp.persistence.TablesLike._
 import com.workday.warp.persistence.IdentifierSyntax._
 import com.workday.warp.persistence.exception.WarpFieldPersistenceException
 import org.pmw.tinylog.Logger
@@ -139,7 +139,7 @@ trait CorePersistenceAware extends PersistenceAware {
                                      timeStarted: Instant,
                                      responseTime: Double,
                                      maxResponseTime: Double,
-                                     maybeDocs: Option[String] = None): TablesLike.TestExecutionRowLike = {
+                                     maybeDocs: Option[String] = None): model.TablesLike.TestExecutionRowLike = {
       if (responseTime == 0.0) {
         throw new IllegalArgumentException("Zero Time recorded for this measurement, check your adapter implementation.")
       }

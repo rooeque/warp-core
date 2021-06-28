@@ -5,8 +5,8 @@ import java.time.{Instant, LocalDate}
 import slick.jdbc.MySQLProfile.api._
 import com.workday.warp.junit.{UnitTest, WarpJUnitSpec}
 import com.workday.warp.persistence.Tables._
-import com.workday.warp.persistence.TablesLike._
-import com.workday.warp.persistence.TablesLike.RowTypeClasses._
+import com.workday.warp.persistence.model.TablesLike._
+import com.workday.warp.persistence.model.TablesLike.RowTypeClasses._
 import com.workday.warp.persistence.Tables.RowTypeClasses._
 import com.workday.warp.persistence.CoreIdentifierType._
 import com.workday.warp.TestIdImplicits.string2TestId
